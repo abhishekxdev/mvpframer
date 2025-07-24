@@ -58,7 +58,7 @@ function WorkPageContent() {
             ))}
           </div>
         </div>
-        <Footer showViewWork={false} />
+        <Footer />
       </div>
     </>
   );
