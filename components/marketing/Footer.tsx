@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -45,10 +46,10 @@ export function Footer() {
         <div className="flex-1 flex justify-center items-center w-full hidden md:flex">
           <div className="rounded-3xl bg-black/80 border border-neutral-800 shadow-2xl p-1 md:p-2 w-full max-w-2xl aspect-video flex items-center justify-center relative overflow-hidden">
             <div className="grid grid-cols-2 grid-rows-2 gap-1 w-full h-full">
-              <img src="/Phantom.png" alt="Showcase 1" className="rounded-xl w-full h-full object-cover" />
-              <img src="/emailai.png" alt="Showcase 2" className="rounded-xl w-full h-full object-cover" />
-              <img src="/crm.png" alt="Showcase 3" className="rounded-xl w-full h-full object-cover" />
-              <img src="/projectsync.JPG" alt="Showcase 4" className="rounded-xl w-full h-full object-cover" />
+              <Image src="/Phantom.png" alt="Showcase 1" width={600} height={400} className="rounded-xl w-full h-full object-cover" />
+              <Image src="/emailai.png" alt="Showcase 2" width={600} height={400} className="rounded-xl w-full h-full object-cover" />
+              <Image src="/crm.png" alt="Showcase 3" width={600} height={400} className="rounded-xl w-full h-full object-cover" />
+              <Image src="/projectsync.JPG" alt="Showcase 4" width={600} height={400} className="rounded-xl w-full h-full object-cover" />
             </div>
             <span className="absolute bottom-4 right-6 bg-black/60 text-white text-lg font-bold px-4 py-1.5 rounded-2xl flex items-center gap-2" style={{ fontFamily: 'Satoshi-Regular, sans-serif' }}>
               <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#fff" fillOpacity="0.08"/><path d="M8.5 12.5L11 15l4.5-4.5" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>

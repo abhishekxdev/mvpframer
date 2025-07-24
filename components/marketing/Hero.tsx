@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import BentoGridSecondDemo from "@/components/bento-grid-demo-2";
 import Link from "next/link";
 
@@ -34,19 +33,6 @@ export default function Hero() {
       <BentoGridSecondDemo />
     </section>
   );
-}
-
-const isVideoSource = (source: string): boolean => {
-  return source.toLowerCase().endsWith('.mp4');
-};
-
-interface Project {
-  id: string;
-  title: string;
-  source: string;
-  about: string;
-  tags: string[];
-  url?: string;
 }
 
 export const Twitter=()=>{
