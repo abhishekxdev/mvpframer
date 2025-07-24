@@ -1,12 +1,6 @@
-import { Button } from "@/components/ui/button"
-import { Play } from "lucide-react"
 import Link from "next/link"
 
-interface FooterProps {
-  showViewWork?: boolean;
-}
-
-export function Footer({ showViewWork = true }: FooterProps) {
+export function Footer() {
   return (
     <footer className="w-full py-10 md:py-16 bg-transparent px-3 md:px-0">
       <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8 px-2 md:px-4">

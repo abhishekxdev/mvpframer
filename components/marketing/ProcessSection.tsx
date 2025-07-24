@@ -1,5 +1,4 @@
-import { FaRegListAlt, FaRocket, FaRegSmile, FaRegPaperPlane } from 'react-icons/fa';
-import { cn } from '@/lib/utils';
+import { FaRegListAlt, FaRocket, FaRegPaperPlane } from 'react-icons/fa';
 import Link from "next/link";
 
 const steps = [

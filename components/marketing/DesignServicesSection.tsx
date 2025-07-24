@@ -63,7 +63,7 @@ export default function DesignServicesSection() {
         
         {/* Services Grid */}
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-          {services.map((service, idx) => (
+          {services.map((service) => (
             <div key={service.title} className="rounded-2xl p-6 flex flex-col h-full bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 border border-white/10 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)]">
               <div className="flex items-center mb-3">
                 {service.icon}

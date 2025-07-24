@@ -1,6 +1,6 @@
 "use client"
 
-import { FaStar, FaUser } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 import Link from "next/link";
 
 const stats = [
@@ -74,7 +74,7 @@ export function TestimonialsSection() {
         </div>
         {/* Right: Testimonial Cards */}
         <div className="flex-1 flex flex-col gap-5 w-full">
-          {testimonials.map((t, idx) => (
+          {testimonials.map((t) => (
             <div key={t.name} className="rounded-2xl p-4 flex flex-col md:flex-row gap-3 items-start bg-gradient-to-r from-black/80 via-gray-900/80 to-black/80 border border-white/10 backdrop-blur-sm shadow-[inset_0_1px_3px_rgba(255,255,255,0.1),_0_4px_10px_rgba(0,0,0,0.3)]">
               <div className="flex-1 flex flex-col">
                 <div className="flex flex-col md:flex-row md:items-center md:gap-2">

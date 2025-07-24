@@ -6,9 +6,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { Button } from "@/components/ui/button";
-import { FaStar, FaUser } from "react-icons/fa";
 import Link from "next/link";
+import { FaStar } from "react-icons/fa";
 
 const faqs = [
   {

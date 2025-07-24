@@ -1,17 +1,7 @@
 "use client";
-import { ArrowRight } from "lucide-react";
-import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { FiArrowRight } from 'react-icons/fi';
 import BentoGridSecondDemo from "@/components/bento-grid-demo-2";
 import Link from "next/link";
-
-const projects = [
-  { id: "9", title: "ProjectSync", source: "/projectsync.JPG" },
-  { id: "11", title: "Email AI", source: "/emailai.png" },
-  { id: "20", title: "Nexar", source: "/projectsync.JPG" },
-  { id: "14", title: "Nurodeep", source: "/nurodeep.png" },
-];
 
 export default function Hero() {
   return (
@@ -57,86 +47,6 @@ interface Project {
   about: string;
   tags: string[];
   url?: string;
-}
-
-function ProjectCard({ project }: { project: Project }) {
-  return (
-    <div className="group relative">
-      <div className="relative aspect-[16/9] overflow-hidden rounded-xl bg-black/20 backdrop-blur-sm border border-white/10">
-        {isVideoSource(project.source) ? (
-          <video
-            src={project.source}
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="absolute inset-0 w-full h-full object-contain"
-          />
-        ) : (
-          <Image
-            src={project.source}
-            alt={project.title}
-            fill
-            className="object-contain"
-            priority
-          />
-        )}
-      </div>
-      {/* Hover Overlay with Link */}
-      {project.url && (
-        <div className="absolute inset-0 bg-black/50 backdrop-blur-sm rounded-xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <a
-            href={project.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors"
-          >
-            Visit Website
-          </a>
-        </div>
-      )}
-    </div>
-  );
-}
-
-function ProjectCardMobile({ project }: { project: Project }) {
-  return (
-    <div className="group relative">
-      <div className="relative aspect-video overflow-hidden rounded-xl bg-black/20 backdrop-blur-sm border border-white/10">
-        {isVideoSource(project.source) ? (
-          <video
-            src={project.source}
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-        ) : (
-          <Image
-            src={project.source}
-            alt={project.title}
-            fill
-            className="object-cover"
-            priority
-          />
-        )}
-      </div>
-      {/* Hover Overlay with Link */}
-      {project.url && (
-        <div className="absolute inset-0 bg-black/50 backdrop-blur-sm rounded-xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <a
-            href={project.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white text-black px-4 py-2 rounded-md font-semibold text-sm hover:bg-gray-200 transition-colors"
-          >
-            Visit Website
-          </a>
-        </div>
-      )}
-    </div>
-  );
 }
 
 export const Twitter=()=>{
