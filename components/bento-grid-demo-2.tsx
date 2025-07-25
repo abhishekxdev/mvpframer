@@ -41,7 +41,7 @@ const ArrowIcon = () => (
 const projectImages = [
   { src: "/projectsync.JPG", alt: "ProjectSync" },
   { src: "/emailai.png", alt: "Email AI" },
-  { src: "/horoscope.png", alt: "Nexar" },
+  { src: "/horoscope.PNG", alt: "Nexar" },
   { src: "/autobot.png", alt: "Nurodeep" },
 ];
 
